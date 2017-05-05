@@ -1,0 +1,25 @@
+Features used to distinguish T2: he,, him,, his,, she,, her,, them,, we,, their,, our,, hers,, they
+Size of T1 Ham: 1218
+Size of T1 Spam: 1055
+Size of T2 Ham: 6595
+Size of T2 Spam: 9570
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.5
+Vanilla Training: 15665 ham and 21211 spam.
+Testing: 7813 ham and 10625 spam.
+Pollution Training: 20954 ham and 15921 spam.
+Vanilla Detection Rate: 97.2827855516.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 23.9331280246
+
+STATS
+---------------------------
+Initial Detection Rate: 23.9331280246
+Final Detection Rate: 23.9331280246
+Total Unlearned:
+0
+Polluted Percentage of Unlearned:

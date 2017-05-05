@@ -1,0 +1,5 @@
+# Mislabeled*
+*.o
+*.pyc
+*.a
+*.so.3

@@ -1,0 +1,54 @@
+greedy=false
+all_opt=true
+update_opt=hybrid
+distance_opt=inv-match
+---------------------------
+Data Set: Mislabeled-Both-2.2
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 92.0202630478.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 26.2583073849
+1, 1: 26.4023795139, 15, 15
+2, 1: 27.2249848957, 260, 238
+3, 1: 29.0793326207, 242, 167
+4, 1: 31.3054793884, 104, 97
+5, 1: 32.8205604871, 218, 206
+6, 1: 36.5385509132, 218, 140
+7, 1: 40.4656783009, 204, 51
+8, 1: 43.035739183, 438, 198
+9, 1: 48.3896453967, 280, 161
+10, 1: 48.7986243435, 5347, 2134
+11, 1: 50.2765255379, 526, 469
+12, 2: 52.8744713482, 112, 53
+13, 2: 53.4600548404, 2636, 764
+14, 3: 53.4879397686, 23, 10
+15, 3: 53.5808895292, 122, 15
+16, 3: 64.5907886787, 967, 78
+17, 4: 64.7952781522, 82, 1
+
+STATS
+---------------------------
+Initial Detection Rate: 26.2583073849
+Final Detection Rate: 64.7952781522
+Total Unlearned:
+11794
+Polluted Percentage of Unlearned:
+4797/11794 = 0.406732236731
+Unpolluted Percentage of Unlearned:
+6997/11794 = 0.593267763269
+Percentage of Polluted Unlearned:
+4797/4800 = 0.999375
+Percentage of Unpolluted Unlearned:
+6997/7200 = 0.971805555556
+Percentage of Noisy Data in Unpolluted Unlearned:
+0/6997 = 0.0
+Time for training:
+0 hours, 1 minutes, and 0.22519493103 seconds.
+Time for unlearning:
+0 hours, 13 minutes, and 56.9133028984 seconds.

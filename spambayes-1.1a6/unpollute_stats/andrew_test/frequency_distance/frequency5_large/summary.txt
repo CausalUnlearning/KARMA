@@ -1,0 +1,7 @@
+Frequency5 Tests
+distance_opt = frequency5
+	e.g. (1/(N2+1)+1/(N3+1)+1/(N8+1)) / |M*M|
+	M = intersection of email vector and common_features
+all_opt = True
+greedy = True
+include_unsures = False

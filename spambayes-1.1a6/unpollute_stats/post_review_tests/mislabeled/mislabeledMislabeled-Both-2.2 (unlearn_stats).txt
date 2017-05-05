@@ -1,0 +1,41 @@
+Ham cutoff : 0.49
+Spam cutoff : 0.51
+Size of T1 Ham: 828
+Size of T1 Spam: 2616
+Size of T2 Ham: 9705
+Size of T2 Spam: 8368
+---------------------------
+Data Set: Mislabeled-Both-2.2
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 98.3361992843.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 75.9581881533, 5984, 2395
+t2 detection rate: 46.1019199911
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 75.9581881533
+Total Unlearned:
+5984
+Polluted Percentage of Unlearned:
+2395/5984 = 0.400233957219
+Unpolluted Percentage of Unlearned:
+3589/5984 = 0.599766042781
+Percentage of Polluted Unlearned:
+2395/4800 = 0.498958333333
+Percentage of Unpolluted Unlearned:
+3589/7200 = 0.498472222222
+Percentage of Noisy Data in Unpolluted Unlearned:
+0/3589 = 0.0
+Time for training:
+0 hours, 1 minutes, and 33.4431259632 seconds.
+Time for unlearning:
+0 hours, 9 minutes, and 0.893857002258 seconds.

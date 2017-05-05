@@ -1,0 +1,108 @@
+Ham cutoff : 0.49
+Spam cutoff : 0.51
+Size of T1 Ham: 2566
+Size of T1 Spam: 4250
+Size of T2 Ham: 2527
+Size of T2 Spam: 5741
+---------------------------
+Data Set: Mislabeled-Both-trec07p-0.5
+Vanilla Training: 10010 ham and 20158 spam.
+Testing: 5093 ham and 9991 spam.
+Pollution Training: 20050 ham and 10117 spam.
+Vanilla Detection Rate: 96.9106337841.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 61.0475352113, 29704, 19788
+t2 detection rate: 60.4378326076
+2, 1: 61.2529342723, 19387, 9348
+t2 detection rate: 60.8732462506
+3, 1: 61.5757042254, 1385, 263
+t2 detection rate: 60.9216255443
+4, 1: 61.8984741784, 502, 91
+t2 detection rate: 61.1998064828
+5, 1: 62.588028169, 256, 71
+t2 detection rate: 61.9013062409
+6, 1: 63.3069248826, 502, 130
+t2 detection rate: 62.6149008224
+7, 2: 64.1431924883, 104, 52
+t2 detection rate: 63.4857281084
+8, 2: 64.7447183099, 156, 42
+t2 detection rate: 64.1388485728
+9, 2: 65.2435446009, 104, 67
+t2 detection rate: 64.5379777455
+10, 2: 66.2411971831, 526, 16
+t2 detection rate: 65.4692791485
+11, 2: 66.6226525822, 104, 2
+t2 detection rate: 65.7958393807
+12, 2: 66.9160798122, 365, 5
+t2 detection rate: 66.18287373
+13, 2: 67.6056338028, 256, 0
+t2 detection rate: 66.6787614901
+14, 2: 68.1924882629, 365, 0
+t2 detection rate: 67.198838897
+15, 3: 84.8884976526, 4492, 30
+t2 detection rate: 88.6550556362
+16, 5: 84.9765258216, 342, 0
+t2 detection rate: 88.038219642
+17, 5: 85.0205399061, 203, 0
+t2 detection rate: 88.4373488147
+18, 5: 85.3139671362, 104, 0
+t2 detection rate: 88.534107402
+19, 5: 85.4313380282, 156, 0
+t2 detection rate: 88.8001935172
+20, 5: 85.6660798122, 142, 0
+t2 detection rate: 89.2477019836
+21, 5: 85.7541079812, 104, 0
+t2 detection rate: 89.1388485728
+22, 6: 85.9595070423, 118, 0
+t2 detection rate: 89.0420899855
+23, 7: 87.1919014085, 242, 206
+t2 detection rate: 90.1427189163
+24, 8: 87.764084507, 138, 0
+t2 detection rate: 89.6952104499
+Top 20 most common features in unlearned emails as (word, frequency)
+('restore', 327)
+('patch.', 232)
+('clinton', 224)
+('past,', 201)
+('brand-name', 200)
+('url:trane_diy_300x250_30k', 197)
+('url:ccwtmtrn0080000362dwo', 197)
+('wanting', 183)
+('safest.', 182)
+('restricted', 181)
+('purposes.', 181)
+('covering', 172)
+('advancement', 161)
+("subject: '", 160)
+('subject:first', 160)
+('explore', 159)
+('clouds,', 153)
+('off,', 152)
+('substance', 150)
+('megasize', 148)
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 87.764084507
+Total Unlearned:
+59757
+Polluted Percentage of Unlearned:
+30111/59757 = 0.503890757568
+Unpolluted Percentage of Unlearned:
+29646/59757 = 0.496109242432
+Percentage of Polluted Unlearned:
+30111/30167 = 0.998143666921
+Percentage of Unpolluted Unlearned:
+29646/30168 = 0.982696897375
+Percentage of Noisy Data in Unpolluted Unlearned:
+9399/29646 = 0.317041084801
+Time for training:
+0 hours, 20 minutes, and 1.58956408501 seconds.
+Time for unlearning:
+2 hours, 54 minutes, and 54.5710439682 seconds.

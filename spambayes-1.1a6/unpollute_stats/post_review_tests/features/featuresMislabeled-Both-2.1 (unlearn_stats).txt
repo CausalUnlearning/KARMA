@@ -1,0 +1,86 @@
+Features used to distinguish T2: he, him, his, she, her, them, we
+Size of T1 Ham: 4775
+Size of T1 Spam: 5032
+Size of T2 Ham: 5758
+Size of T2 Spam: 5952
+---------------------------
+Data Set: Mislabeled-Both-2.1
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 94.9900079007.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 32.1810951361
+1, 1: 46.3342510452, 1911, 1030
+t2 detection rate: 43.2280102477
+2, 1: 54.4407056184, 787, 609
+t2 detection rate: 55.072587532
+3, 1: 56.6738044254, 787, 668
+t2 detection rate: 55.8411614005
+4, 1: 63.0264097074, 342, 295
+t2 detection rate: 59.2826643894
+5, 1: 63.7401855817, 204, 143
+t2 detection rate: 59.51323655
+6, 1: 73.2028143163, 256, 204
+t2 detection rate: 68.7446626815
+7, 1: 77.0470072397, 256, 194
+t2 detection rate: 72.1776259607
+8, 1: 79.9632915265, 204, 151
+t2 detection rate: 75.6362083689
+9, 1: 81.6355664321, 304, 138
+t2 detection rate: 83.9111870196
+10, 1: 82.8591822168, 43, 21
+t2 detection rate: 84.2527754056
+11, 1: 83.5423676965, 204, 133
+t2 detection rate: 83.6976942784
+12, 1: 85.0412970327, 157, 126
+t2 detection rate: 82.9718189582
+13, 1: 88.283878862, 157, 128
+t2 detection rate: 81.9043552519
+14, 2: 88.7223411849, 180, 28
+t2 detection rate: 83.8855678907
+15, 2: 88.7631283777, 19, 5
+t2 detection rate: 83.9624252775
+16, 2: 88.7835219741, 180, 67
+t2 detection rate: 83.4244235696
+17, 2: 88.8243091669, 19, 5
+t2 detection rate: 83.4500426985
+18, 3: 90.2926481085, 585, 207
+t2 detection rate: 88.1981212639
+19, 3: 90.6393392475, 43, 10
+t2 detection rate: 88.1639624253
+20, 4: 91.2715407362, 280, 130
+t2 detection rate: 88.6934244236
+21, 4: 91.4856734985, 118, 37
+t2 detection rate: 86.9086251067
+22, 5: 91.5978382788, 142, 9
+t2 detection rate: 89.0947907771
+23, 5: 91.8323646375, 73, 37
+t2 detection rate: 92.6216908625
+24, 6: 92.0261038034, 81, 29
+t2 detection rate: 91.6908625107
+
+STATS
+---------------------------
+Initial Detection Rate: 32.1810951361
+Final Detection Rate: 92.0261038034
+Total Unlearned:
+7332
+Polluted Percentage of Unlearned:
+4404/7332 = 0.600654664484
+Unpolluted Percentage of Unlearned:
+2928/7332 = 0.399345335516
+Percentage of Polluted Unlearned:
+4404/4800 = 0.9175
+Percentage of Unpolluted Unlearned:
+2928/7200 = 0.406666666667
+Percentage of Noisy Data in Unpolluted Unlearned:
+978/2928 = 0.334016393443
+Time for training:
+0 hours, 0 minutes, and 48.5628910065 seconds.
+Time for unlearning:
+0 hours, 41 minutes, and 25.7327997684 seconds.

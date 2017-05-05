@@ -1,0 +1,8 @@
+
+.idea/
+*.xml
+.idea/spambayes-1.1a6.iml
+testtools/Data/*.txt
+testtools/Data Sets.zip
+testtools/io_locations.py
+*.pyc

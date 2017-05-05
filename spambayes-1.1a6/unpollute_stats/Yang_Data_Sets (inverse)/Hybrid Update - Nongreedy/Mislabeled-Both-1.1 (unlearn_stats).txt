@@ -1,0 +1,56 @@
+---------------------------
+Data Set: Mislabeled-Both-1.1
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 49.295905563
+1, 1: 49.6723520937, 104, 16, False
+2, 1: 50.0395036483, 81, 24, False
+3, 1: 50.1789282893, 21, 21, None
+4, 1: 50.6111446763, 14, 14, None
+5, 1: 50.8714040061, 43, 15, False
+6, 1: 51.1037784078, 142, 36, False
+7, 1: 52.0751034066, 81, 53, False
+8, 1: 52.274945392, 242, 207, False
+9, 1: 53.8876237394, 156, 65, False
+10, 1: 54.9054236185, 156, 11, False
+11, 1: 55.7837988567, 347, 136, False
+12, 1: 57.4104196682, 541, 239, False
+13, 1: 61.8859506437, 318, 237, False
+14, 1: 65.5760561417, 380, 275, False
+15, 1: 77.3899707208, 987, 531, False
+16, 1: 78.7749221546, 887, 607, False
+17, 2: 78.9422317238, 104, 23, False
+18, 2: 79.2536134219, 100, 5, None
+19, 2: 79.2954408142, 100, 20, None
+20, 2: 79.7230097132, 100, 9, None
+21, 2: 80.1273411721, 81, 2, False
+22, 2: 80.2202909328, 21, 21, None
+23, 2: 81.1497885393, 188, 92, False
+24, 2: 81.9909838732, 242, 101, False
+25, 2: 82.5533299252, 81, 33, False
+26, 2: 84.2729004973, 503, 45, False
+
+STATS
+---------------------------
+Initial Detection Rate: 49.295905563
+Final Detection Rate: 84.2729004973
+Total Unlearned:
+6020
+Polluted Percentage of Unlearned:
+0.471428571429
+Unpolluted Percentage of Unlearned:
+0.528571428571
+Percentage of Polluted Unlearned:
+0.788333333333
+Percentage of Unpolluted Unlearned:
+0.37880952381
+Time for training:
+0 hours, 2 minutes, and 22.853000164 seconds.
+Time for unlearning:
+0 hours, 43 minutes, and 44.0369999409 seconds.

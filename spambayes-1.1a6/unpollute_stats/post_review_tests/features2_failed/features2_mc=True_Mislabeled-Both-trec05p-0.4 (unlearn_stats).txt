@@ -1,0 +1,51 @@
+Features used to distinguish T2: he,, him,, his,, she,, her,, them,, we,, their,, our,, hers,, they
+Size of T1 Ham: 88
+Size of T1 Spam: 218
+Size of T2 Ham: 7825
+Size of T2 Spam: 10307
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.4
+Vanilla Training: 18844 ham and 25407 spam.
+Testing: 7913 ham and 10525 spam.
+Pollution Training: 16858 ham and 12642 spam.
+Vanilla Detection Rate: 98.7742705283.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 61.7647058824, 30074, 14605
+t2 detection rate: 69.4021619237
+2, 1: 62.091503268, 256, 9
+t2 detection rate: 60.7434370174
+3, 1: 66.0130718954, 924, 288
+t2 detection rate: 57.2027354953
+4, 1: 68.6274509804, 502, 117
+t2 detection rate: 55.7246856386
+5, 1: 69.6078431373, 924, 276
+t2 detection rate: 54.7816015884
+6, 1: 70.5882352941, 241, 238
+t2 detection rate: 55.8129274211
+7, 2: 70.9150326797, 241, 209
+t2 detection rate: 55.9949260975
+8, 2: 71.2418300654, 241, 241
+t2 detection rate: 56.0721376572
+9, 2: 71.568627451, 241, 240
+t2 detection rate: 56.1493492169
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 71.568627451
+Total Unlearned:
+33644
+Polluted Percentage of Unlearned:
+16223/33644 = 0.482195933896
+Unpolluted Percentage of Unlearned:
+17421/33644 = 0.517804066104
+Percentage of Polluted Unlearned:
+16223/29500 = 0.54993220339
+Percentage of Unpolluted Unlearned:
+17421/44251 = 0.393686018395
+--------Experiment2 Statistics--------

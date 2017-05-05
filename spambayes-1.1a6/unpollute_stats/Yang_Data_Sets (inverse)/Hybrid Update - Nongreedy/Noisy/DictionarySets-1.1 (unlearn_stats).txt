@@ -1,0 +1,41 @@
+---------------------------
+Data Set: DictionarySets-1.1
+Vanilla Training: 10533 ham and 10984 spam.
+Testing: 6000 ham and 6000 spam.
+Pollution Training: 0 ham and 26000 spam.
+Vanilla Detection Rate: 94.825.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 68.8
+1, 1: 68.8166666667, 156, 0
+2, 1: 68.8416666667, 24, 24
+3, 1: 68.9333333333, 218, 141
+4, 1: 68.975, 180, 112
+5, 1: 69.5166666667, 621, 371
+6, 1: 70.1666666667, 925, 578
+7, 1: 72.9666666667, 3369, 2903
+8, 1: 95.2833333333, 22191, 21687
+
+STATS
+---------------------------
+Initial Detection Rate: 68.8
+Final Detection Rate: 95.2833333333
+Total Unlearned:
+27684
+Polluted Percentage of Unlearned:
+0.932524201705
+Unpolluted Percentage of Unlearned:
+0.067475798295
+Percentage of Polluted Unlearned:
+0.992923076923
+Percentage of Unpolluted Unlearned:
+0.0868150764512
+Percentage of Noisy Data in Unpolluted Unlearned:
+0.0835117773019
+Time for training:
+0 hours, 6 minutes, and 16.4440000057 seconds.
+Time for unlearning:
+0 hours, 36 minutes, and 48.0069999695 seconds.

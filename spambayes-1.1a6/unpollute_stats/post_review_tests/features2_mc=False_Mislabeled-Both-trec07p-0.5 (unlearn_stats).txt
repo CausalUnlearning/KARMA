@@ -1,0 +1,58 @@
+Features used to distinguish T2: he, him, his, she, her, them, we, their, our, hers, they, you
+Size of T1 Ham: 3221
+Size of T1 Spam: 6964
+Size of T2 Ham: 1872
+Size of T2 Spam: 3027
+---------------------------
+Data Set: Mislabeled-Both-trec07p-0.5
+Vanilla Training: 10010 ham and 20158 spam.
+Testing: 5093 ham and 9991 spam.
+Pollution Training: 20050 ham and 10117 spam.
+Vanilla Detection Rate: 94.9814372845.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 19.3127147766
+1, 1: 68.4339715268, 29744, 19944
+t2 detection rate: 59.4202898551
+2, 1: 70.0932744232, 14978, 8425
+t2 detection rate: 61.114513166
+3, 2: 74.0206185567, 5740, 1139
+t2 detection rate: 71.8718105736
+4, 3: 75.3853706431, 81, 0
+t2 detection rate: 73.382322923
+5, 3: 75.9253804615, 765, 92
+t2 detection rate: 73.9130434783
+6, 4: 76.9857633775, 5465, 276
+t2 detection rate: 77.8934476424
+7, 5: 81.2076583211, 1634, 0
+t2 detection rate: 77.7913859971
+8, 5: 82.2287677958, 625, 0
+t2 detection rate: 76.8932435191
+9, 5: 84.0157093765, 57, 30
+t2 detection rate: 79.6897325985
+10, 6: 85.88119784, 203, 44
+t2 detection rate: 80.6491120637
+
+STATS
+---------------------------
+Initial Detection Rate: 19.3127147766
+Final Detection Rate: 85.88119784
+Total Unlearned:
+59292
+Polluted Percentage of Unlearned:
+29950/59292 = 0.50512716724
+Unpolluted Percentage of Unlearned:
+29342/59292 = 0.49487283276
+Percentage of Polluted Unlearned:
+29950/30167 = 0.992806709318
+Percentage of Unpolluted Unlearned:
+29342/30168 = 0.972619994696
+--------Experiment2 Statistics--------Polluted Ham unlearned with features: 13328Polluted Spam unlearned with features: 6482Of all unlearned, polluted emails, what percentage contain any of the partition features: 0.66143572621Polluted Ham NOT unlearned with features: 38Polluted Spam NOT unlearned with features: 61Of all polluted emails NOT unlearned, what percentage contain any of the partition features: 0.456221198157Percentage of Noisy Data in Unpolluted Unlearned:
+12989/29342 = 0.442676027537
+Time for training:
+0 hours, 7 minutes, and 42.7062320709 seconds.
+Time for unlearning:
+3 hours, 27 minutes, and 13.7892160416 seconds.

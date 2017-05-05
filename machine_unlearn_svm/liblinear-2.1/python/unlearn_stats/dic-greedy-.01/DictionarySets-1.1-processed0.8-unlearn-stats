@@ -1,0 +1,41 @@
+---------------------------
+Data Set: DictionarySets-1.1-processed0.8
+Training: 2400 unpolluted emails
+Testing: 6000 emails
+Pollution: 9600 polluted emails
+Vanilla Detection Rate: 93.85.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 91.05
+1, 1: 93.7666666667, 9623, 9429
+2, 1: 93.85, 104, 0
+3, 1: 94.0166666667, 142, 0
+4, 2: 94.0666666667, 76, 75
+5, 3: 94.2833333333, 53, 0
+6, 4: 94.4166666667, 142, 0
+7, 6: 94.4166666667, 0, 0
+
+STATS
+---------------------------
+Unlearn Time: 0 hours, 58 minutes, and 33.2021701336 seconds.
+Initial Detection Rate: 91.05
+Final Detection Rate: 94.4166666667
+Total Unlearned:
+10140
+Polluted Percentage of Unlearned:
+9504/10140 = 0.937278106509
+Unpolluted Percentage of Unlearned:
+636/10140 = 0.0627218934911
+Percentage of Polluted Unlearned:
+9504/9600 = 0.99
+Percentage of Unpolluted Unlearned:
+636/2400 = 0.265
+Percentage of Noisy Data in Unpolluted Unlearned:
+142/636 = 0.223270440252
+Time for training:
+0 hours, 4 minutes, and 7.62916898727 seconds.
+Time for unlearning:
+0 hours, 58 minutes, and 33.2021701336 seconds.

@@ -1,0 +1,55 @@
+---------------------------
+Data Set: Mislabeled-Both-2.2-processed
+Training: 7200 unpolluted emails
+Testing: 6000 emails
+Pollution: 4800 polluted emails
+Vanilla Detection Rate: 95.8833333333.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 83.1833333333
+1, 1: 89.1333333333, 764, 750
+2, 1: 90.25, 104, 96
+3, 1: 91.2666666667, 256, 209
+4, 1: 91.45, 142, 142
+5, 1: 91.8833333333, 81, 70
+6, 1: 92.4333333333, 43, 43
+7, 1: 92.6166666667, 81, 76
+8, 1: 92.7666666667, 57, 45
+9, 1: 93.0166666667, 142, 99
+10, 1: 93.5166666667, 104, 99
+11, 1: 93.6, 43, 35
+12, 1: 93.65, 81, 64
+13, 1: 93.8166666667, 142, 119
+14, 2: 94.15, 180, 42
+15, 2: 94.2166666667, 180, 133
+16, 2: 94.4, 118, 111
+17, 2: 94.4333333333, 118, 116
+18, 2: 94.8333333333, 81, 70
+19, 2: 94.8666666667, 104, 25
+20, 2: 95.0833333333, 104, 101
+21, 3: 95.2166666667, 156, 4
+
+STATS
+---------------------------
+Unlearn Time: 4 hours, 9 minutes, and 35.6204810143 seconds.
+Initial Detection Rate: 83.1833333333
+Final Detection Rate: 95.2
+Total Unlearned:
+3081
+Polluted Percentage of Unlearned:
+2449/3081 = 0.794871794872
+Unpolluted Percentage of Unlearned:
+632/3081 = 0.205128205128
+Percentage of Polluted Unlearned:
+2449/4800 = 0.510208333333
+Percentage of Unpolluted Unlearned:
+632/7200 = 0.0877777777778
+Percentage of Noisy Data in Unpolluted Unlearned:
+312/632 = 0.493670886076
+Time for training:
+0 hours, 5 minutes, and 40.1904349327 seconds.
+Time for unlearning:
+4 hours, 9 minutes, and 35.6204810143 seconds.

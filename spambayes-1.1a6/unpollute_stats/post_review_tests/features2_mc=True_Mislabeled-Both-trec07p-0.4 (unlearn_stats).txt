@@ -1,0 +1,44 @@
+Features used to distinguish T2: he, him, his, she, her, them, we, their, our, hers, they, you
+Size of T1 Ham: 159
+Size of T1 Spam: 1703
+Size of T2 Ham: 4961
+Size of T2 Spam: 8261
+---------------------------
+Data Set: Mislabeled-Both-trec07p-0.4
+Vanilla Training: 12017 ham and 24184 spam.
+Testing: 5120 ham and 9964 spam.
+Pollution Training: 16051 ham and 8083 spam.
+Vanilla Detection Rate: 96.990188279.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 90.2255639098, 27044, 15127
+t2 detection rate: 57.0639842686
+2, 1: 90.8163265306, 15607, 7835
+t2 detection rate: 60.8228709726
+3, 1: 90.9237379162, 241, 240
+t2 detection rate: 61.1405233701
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 90.9237379162
+Total Unlearned:
+42892
+Polluted Percentage of Unlearned:
+23202/42892 = 0.540940035438
+Unpolluted Percentage of Unlearned:
+19690/42892 = 0.459059964562
+Percentage of Polluted Unlearned:
+23202/24134 = 0.961382282257
+Percentage of Unpolluted Unlearned:
+19690/36201 = 0.543907626861
+--------Experiment2 Statistics--------Polluted Ham unlearned with features: 9863Polluted Spam unlearned with features: 5210Of all unlearned, polluted emails, what percentage contain any of the partition features: 0.649642272218Polluted Ham NOT unlearned with features: 804Polluted Spam NOT unlearned with features: 3Of all polluted emails NOT unlearned, what percentage contain any of the partition features: 0.865879828326Percentage of Noisy Data in Unpolluted Unlearned:
+0/19690 = 0.0
+Time for training:
+0 hours, 13 minutes, and 3.26347303391 seconds.
+Time for unlearning:
+3 hours, 43 minutes, and 41.4767959118 seconds.

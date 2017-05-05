@@ -1,0 +1,99 @@
+Features used to distinguish T2: he, him, his, she, her, them, we
+Size of T1 Ham: 4775
+Size of T1 Spam: 5032
+Size of T2 Ham: 5758
+Size of T2 Spam: 5952
+---------------------------
+Data Set: Mislabeled-Both-2.2
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 94.4741367291.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 32.0383399613
+1, 1: 53.3190578158, 2295, 1281
+t2 detection rate: 54.2527754056
+2, 1: 53.5127969817, 1630, 1165
+t2 detection rate: 54.8334756618
+3, 1: 67.6557560926, 365, 323
+t2 detection rate: 65.6276686593
+4, 1: 68.4307127562, 526, 439
+t2 detection rate: 65.5593509821
+5, 1: 74.7731212399, 142, 133
+t2 detection rate: 66.5841161401
+6, 1: 80.0652595085, 204, 191
+t2 detection rate: 73.1938514091
+7, 1: 83.6443356786, 104, 64
+t2 detection rate: 77.8138343296
+8, 1: 85.7040889161, 104, 59
+t2 detection rate: 80.6917164816
+9, 1: 86.3260936066, 57, 35
+t2 detection rate: 81.2126387703
+10, 1: 89.1710003059, 104, 61
+t2 detection rate: 89.4363791631
+11, 1: 89.1811971041, 104, 57
+t2 detection rate: 88.6848847139
+12, 2: 90.6291424493, 390, 125
+t2 detection rate: 90.7173356106
+13, 2: 90.6393392475, 204, 15
+t2 detection rate: 91.7506404782
+14, 2: 91.4958702967, 204, 146
+t2 detection rate: 92.0580700256
+15, 2: 91.5060670949, 81, 16
+t2 detection rate: 92.3569598634
+16, 2: 91.6794126644, 43, 22
+t2 detection rate: 92.5021349274
+17, 3: 92.0770877944, 203, 65
+t2 detection rate: 89.6071733561
+18, 3: 92.3727949424, 57, 35
+t2 detection rate: 89.6925704526
+19, 3: 92.4951565209, 112, 29
+t2 detection rate: 91.0930828352
+20, 3: 92.7194860814, 104, 41
+t2 detection rate: 90.9649871904
+Top 20 most common features in unlearned emails as (word, frequency)
+('enron', 1797)
+('gas', 732)
+('hou', 683)
+('vince', 678)
+('forwarded', 656)
+('corp', 656)
+('houston', 588)
+('713', 549)
+('california', 483)
+('north', 408)
+('mark', 377)
+('wednesday', 364)
+('portland', 339)
+('schedule', 339)
+('texas', 334)
+('scheduling', 332)
+('january', 311)
+('april', 305)
+('hello', 292)
+('2004', 292)
+
+STATS
+---------------------------
+Initial Detection Rate: 32.0383399613
+Final Detection Rate: 92.7194860814
+Total Unlearned:
+7033
+Polluted Percentage of Unlearned:
+4302/7033 = 0.611687757714
+Unpolluted Percentage of Unlearned:
+2731/7033 = 0.388312242286
+Percentage of Polluted Unlearned:
+4302/4800 = 0.89625
+Percentage of Unpolluted Unlearned:
+2731/7200 = 0.379305555556
+Percentage of Noisy Data in Unpolluted Unlearned:
+724/2731 = 0.265104357378
+Time for training:
+0 hours, 0 minutes, and 50.388933897 seconds.
+Time for unlearning:
+0 hours, 26 minutes, and 27.0338459015 seconds.

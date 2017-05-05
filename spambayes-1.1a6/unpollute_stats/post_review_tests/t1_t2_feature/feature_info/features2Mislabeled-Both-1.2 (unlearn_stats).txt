@@ -1,0 +1,121 @@
+Features used to distinguish T2: he, him, his, she, her, them, we
+Size of T1 Ham: 4775
+Size of T1 Spam: 5032
+Size of T2 Ham: 5758
+Size of T2 Spam: 5952
+---------------------------
+Data Set: Mislabeled-Both-1.2
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+Vanilla Detection Rate: 95.1433750058.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 64.199041501
+1, 1: 66.2180075456, 939, 601
+t2 detection rate: 58.9069171648
+2, 1: 67.0847353931, 939, 641
+t2 detection rate: 58.7959009394
+3, 1: 70.6332211686, 660, 430
+t2 detection rate: 60.2818104184
+4, 1: 72.6623840114, 181, 179
+t2 detection rate: 62.0836891546
+5, 1: 74.579382074, 379, 149
+t2 detection rate: 63.4671221178
+6, 1: 77.0877944325, 104, 82
+t2 detection rate: 65.5593509821
+7, 1: 79.0047924952, 104, 67
+t2 detection rate: 67.2331340734
+8, 1: 80.3201794636, 119, 95
+t2 detection rate: 69.1545687447
+9, 1: 81.6457632303, 104, 63
+t2 detection rate: 70.6148590948
+10, 1: 82.5328846742, 104, 64
+t2 detection rate: 71.366353544
+11, 1: 83.562761293, 57, 38
+t2 detection rate: 71.8018787361
+12, 1: 84.7965738758, 104, 62
+t2 detection rate: 73.561058924
+13, 1: 85.2248394004, 57, 39
+t2 detection rate: 73.731853117
+14, 1: 85.9182216784, 57, 37
+t2 detection rate: 74.1332194705
+15, 1: 86.8155399205, 104, 54
+t2 detection rate: 74.756618275
+16, 1: 86.9175079025, 43, 17
+t2 detection rate: 75.0469684031
+17, 1: 90.4252064852, 104, 63
+t2 detection rate: 82.6046114432
+18, 2: 91.1287855613, 104, 55
+t2 detection rate: 83.5012809564
+19, 2: 91.7303966555, 203, 67
+t2 detection rate: 87.950469684
+20, 2: 92.1280717855, 318, 48
+t2 detection rate: 90.828351836
+21, 2: 92.3829917406, 119, 94
+t2 detection rate: 90.6490179334
+22, 2: 92.5767309065, 156, 59
+t2 detection rate: 91.2553373185
+23, 2: 92.6786988885, 104, 77
+t2 detection rate: 90.7002561913
+24, 2: 92.8418476598, 104, 48
+t2 detection rate: 90.0341588386
+25, 2: 92.9846028347, 57, 19
+t2 detection rate: 90.1964133219
+26, 2: 93.0661772204, 104, 68
+t2 detection rate: 89.6754910333
+27, 2: 93.2599163863, 104, 71
+t2 detection rate: 88.8983774552
+28, 3: 93.596410727, 57, 17
+t2 detection rate: 89.4363791631
+29, 4: 93.6779851127, 81, 19
+t2 detection rate: 89.9402220325
+30, 5: 93.8105434893, 104, 54
+t2 detection rate: 89.487617421
+31, 6: 94.0348730499, 104, 0
+t2 detection rate: 89.0862510675
+Top 20 most common features in unlearned emails as (word, frequency)
+('subject', 2292)
+('enron', 2146)
+('subject: : ', 2138)
+('thanks', 1760)
+('2001', 1393)
+('let', 1297)
+('http', 1224)
+('2000', 1201)
+('call', 1036)
+('questions', 1004)
+('date', 975)
+('original', 967)
+('attached', 956)
+('group', 941)
+('ect', 934)
+('vince', 915)
+('hou', 868)
+('money', 867)
+('www', 864)
+('gas', 821)
+
+STATS
+---------------------------
+Initial Detection Rate: 64.199041501
+Final Detection Rate: 94.0348730499
+Total Unlearned:
+5878
+Polluted Percentage of Unlearned:
+3377/5878 = 0.574515141204
+Unpolluted Percentage of Unlearned:
+2501/5878 = 0.425484858796
+Percentage of Polluted Unlearned:
+3377/3600 = 0.938055555556
+Percentage of Unpolluted Unlearned:
+2501/8400 = 0.297738095238
+Percentage of Noisy Data in Unpolluted Unlearned:
+890/2501 = 0.355857656937
+Time for training:
+0 hours, 0 minutes, and 51.3222270012 seconds.
+Time for unlearning:
+1 hours, 7 minutes, and 10.2596850395 seconds.

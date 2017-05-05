@@ -1,0 +1,90 @@
+Ham cutoff : 0.49
+Spam cutoff : 0.51
+Size of T1 Ham: 484
+Size of T1 Spam: 2264
+Size of T2 Ham: 7429
+Size of T2 Spam: 8261
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.4
+Vanilla Training: 18844 ham and 25407 spam.
+Testing: 7913 ham and 10525 spam.
+Pollution Training: 16858 ham and 12642 spam.
+Vanilla Detection Rate: 98.7742705283.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 77.5836972344, 32833, 15788
+t2 detection rate: 54.5761631612
+2, 1: 80.1673944687, 26904, 11717
+t2 detection rate: 85.2644996813
+3, 1: 85.9534206696, 2511, 979
+t2 detection rate: 72.9764181007
+4, 1: 86.2081513828, 924, 190
+t2 detection rate: 73.6966220523
+5, 1: 86.826783115, 1789, 157
+t2 detection rate: 75.5449330784
+6, 1: 87.8093158661, 924, 192
+t2 detection rate: 77.8266411727
+7, 1: 87.845705968, 241, 65
+t2 detection rate: 78.132568515
+8, 1: 88.2823871907, 502, 39
+t2 detection rate: 79.1395793499
+9, 1: 88.3187772926, 502, 27
+t2 detection rate: 79.2288081581
+10, 1: 88.4279475983, 502, 13
+t2 detection rate: 79.764181007
+11, 2: 88.6098981077, 2487, 27
+t2 detection rate: 80.4333970682
+12, 2: 88.7918486172, 156, 46
+t2 detection rate: 81.0133843212
+13, 2: 89.1193595342, 283, 13
+t2 detection rate: 81.8228170809
+14, 3: 89.8471615721, 576, 57
+t2 detection rate: 85.7042702358
+15, 3: 90.0655021834, 104, 12
+t2 detection rate: 85.8763543658
+Top 20 most common features in unlearned emails as (word, frequency)
+('from:addr:enron.com', 21333)
+('header:Received:1', 19110)
+('subject:', 10559)
+('skip:- 10', 9992)
+('sent:', 9697)
+('message-----', 9518)
+('enron', 7144)
+('message-id:@NAHOU-MSMBX01V.corp.enron.com', 6859)
+('cc:', 4682)
+('message-id:@NAHOU-MSMBX07V.corp.enron.com', 4565)
+('october', 4493)
+('message-id:@NAHOU-MSMBX03V.corp.enron.com', 3868)
+('monday,', 3535)
+('tuesday,', 3370)
+('wednesday,', 3289)
+('thursday,', 3051)
+('friday,', 2916)
+('cc:2**1', 2674)
+('8bit%:92', 2319)
+('fw:', 2307)
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 90.0655021834
+Total Unlearned:
+71238
+Polluted Percentage of Unlearned:
+29322/71238 = 0.411606165249
+Unpolluted Percentage of Unlearned:
+41916/71238 = 0.588393834751
+Percentage of Polluted Unlearned:
+29322/29500 = 0.993966101695
+Percentage of Unpolluted Unlearned:
+41916/44251 = 0.947232830896
+Percentage of Noisy Data in Unpolluted Unlearned:
+8152/41916 = 0.194484206508
+Time for training:
+0 hours, 24 minutes, and 49.8364691734 seconds.
+Time for unlearning:
+5 hours, 8 minutes, and 58.6921730042 seconds.

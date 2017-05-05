@@ -1,0 +1,62 @@
+Ham cutoff : 0.49
+Spam cutoff : 0.51
+Size of T1 Ham: 8280
+Size of T1 Spam: 26160
+Size of T2 Ham: 9705
+Size of T2 Spam: 8368
+---------------------------
+Data Set: Mislabeled-Both-2.2
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 98.3361992843.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 75.9581881533, 5984, 2394
+t2 detection rate: 46.1019199911
+Top 20 most common features in unlearned emails as (word, frequency)
+('enron', 2695)
+('hou', 1126)
+('gas', 1110)
+('forwarded', 1062)
+('vince', 1043)
+('corp', 987)
+('houston', 835)
+('713', 760)
+('california', 549)
+('north', 537)
+('mark', 528)
+('wednesday', 522)
+('hello', 502)
+('schedule', 476)
+('texas', 455)
+('2004', 435)
+('april', 434)
+('january', 395)
+('october', 389)
+('subject:enron', 373)
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 75.9581881533
+Total Unlearned:
+5984
+Polluted Percentage of Unlearned:
+2394/5984 = 0.40006684492
+Unpolluted Percentage of Unlearned:
+3590/5984 = 0.59993315508
+Percentage of Polluted Unlearned:
+2394/4800 = 0.49875
+Percentage of Unpolluted Unlearned:
+3590/7200 = 0.498611111111
+Percentage of Noisy Data in Unpolluted Unlearned:
+0/3590 = 0.0
+Time for training:
+0 hours, 1 minutes, and 38.9515860081 seconds.
+Time for unlearning:
+0 hours, 19 minutes, and 24.3331511021 seconds.

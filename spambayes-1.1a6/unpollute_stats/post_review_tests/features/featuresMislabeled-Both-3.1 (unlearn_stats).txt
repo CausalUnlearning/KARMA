@@ -1,0 +1,50 @@
+Features used to distinguish T2: he, him, his, she, her, them, we
+Size of T1 Ham: 4775
+Size of T1 Spam: 5032
+Size of T2 Ham: 5758
+Size of T2 Spam: 5952
+---------------------------
+Data Set: Mislabeled-Both-3.1
+Vanilla Training: 3000 ham and 3000 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 3000 ham and 3000 spam.
+Vanilla Detection Rate: 94.7251010829.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 16.8247170388
+1, 1: 54.2673600489, 5279, 2763
+t2 detection rate: 49.829205807
+2, 1: 54.8587743449, 526, 389
+t2 detection rate: 49.8804440649
+3, 1: 57.5915162639, 104, 57
+t2 detection rate: 49.9146029035
+4, 1: 57.8872234118, 57, 23
+t2 detection rate: 49.8804440649
+5, 2: 58.3562761293, 157, 104
+t2 detection rate: 49.9060631939
+6, 3: 58.488834506, 183, 112
+t2 detection rate: 49.9231426132
+
+STATS
+---------------------------
+Initial Detection Rate: 16.8247170388
+Final Detection Rate: 58.488834506
+Total Unlearned:
+6306
+Polluted Percentage of Unlearned:
+3448/6306 = 0.546780843641
+Unpolluted Percentage of Unlearned:
+2858/6306 = 0.453219156359
+Percentage of Polluted Unlearned:
+3448/6000 = 0.574666666667
+Percentage of Unpolluted Unlearned:
+2858/6000 = 0.476333333333
+Percentage of Noisy Data in Unpolluted Unlearned:
+71/2858 = 0.0248425472358
+Time for training:
+0 hours, 0 minutes, and 46.4725401402 seconds.
+Time for unlearning:
+0 hours, 29 minutes, and 20.3608601093 seconds.

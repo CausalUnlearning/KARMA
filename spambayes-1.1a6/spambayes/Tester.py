@@ -1,0 +1,275 @@
+import sys
+from spambayes.Options import options
+
+class Test:
+    # Pass a classifier instance (an instance of Bayes).
+    # Loop:
+    #     # Train the classifer with new ham and spam.
+    #     train(ham, spam) # this implies reset_test_results
+    #     Loop:
+    #         Optional:
+    #             # Possibly fiddle the classifier.
+    #             set_classifier()
+    #             # Forget smessages the classifier was trained on.
+    #             untrain(ham, spam) # this implies reset_test_results
+    #         Optional:
+    #             reset_test_results()
+    #         # Predict against (presumably new) examples.
+    #         predict(ham, spam)
+    #         Optional:
+    #             suck out the results, via instance vrbls and
+    #             false_negative_rate(), false_positive_rate(),
+    #             false_negatives(), and false_positives()
+
+    def __init__(self, classifier):
+        self.reset_test_results()
+        self.set_classifier(classifier)
+        self.truth_examples = [[], []]
+        self.train_examples = [[], [], [], []]
+    # Tell the tester which classifier to use.
+    def set_classifier(self, classifier):
+        self.classifier = classifier
+
+    def reset_test_results(self):
+        # The number of ham and spam instances tested.
+        self.nham_tested = self.nspam_tested = 0
+
+        # The number of test instances correctly and incorrectly classified.
+        self.nham_right = 0
+        self.nham_wrong = 0
+        self.nham_unsure = 0
+        self.nspam_right = 0
+        self.nspam_wrong = 0
+        self.nspam_unsure = 0
+
+        # Lists of bad predictions.
+        self.ham_wrong_examples = []    # False positives:  ham called spam.
+        self.spam_wrong_examples = []   # False negatives:  spam called ham.
+        self.unsure_examples = []       # ham and spam in middle ground
+
+    def reset_truth_list(self):
+        self.truth_examples = [[], []]
+
+    # Train the classifier on streams of ham and spam.  Updates probabilities
+    # before returning, and resets test results.
+    def train(self, hamstream=None, spamstream=None):
+        self.reset_test_results()
+        learn = self.classifier.learn
+
+        ham_counter = 1
+        spam_counter = 1
+        
+
+        if hamstream is not None:
+            for example in hamstream:
+                learn(example, False)
+                print ham_counter, " hams trained"
+                ham_counter += 1
+                sys.stdout.write("\033[F")
+
+
+        if spamstream is not None:
+            for example in spamstream:
+                learn(example, True)
+                print spam_counter, " spams trained"
+                spam_counter += 1
+                sys.stdout.write("\033[F")
+
+    # Untrain the classifier on streams of ham and spam.  Updates
+    # probabilities before returning, and resets test results.
+    def untrain(self, hamstream=None, spamstream=None):
+        self.reset_test_results()
+        unlearn = self.classifier.unlearn
+        if hamstream is not None:
+            for example in hamstream:
+                unlearn(example, False)
+        if spamstream is not None:
+            for example in spamstream:
+                unlearn(example, True)
+
+    # Run prediction on each sample in stream.  You're swearing that stream
+    # is entirely composed of spam (is_spam True), or of ham (is_spam False).
+    # Note that mispredictions are saved, and can be retrieved later via
+    # false_negatives (spam mistakenly called ham) and false_positives (ham
+    # mistakenly called spam).  For this reason, you may wish to wrap examples
+    # in a little class that identifies the example in a useful way, and whose
+    # __iter__ produces a token stream for the classifier.
+    #
+    # If specified, callback(msg, spam_probability) is called for each
+    # msg in the stream, after the spam probability is computed.
+    def predict(self, stream, is_spam, init_ground=False, callback=None, update=False, all_opt=False):
+        guess = self.classifier.spamprob
+        # self.reset_test_results()  # warning: might break something?
+        for example in stream:
+            old_prob = 0
+
+            if example.prob is not None:
+                old_prob = example.prob
+
+            prob = guess(example, update=update, all_opt=all_opt)
+            example.probdiff = prob - old_prob
+
+            if callback:
+                callback(example, prob)
+            is_ham_guessed  = prob <  options["Categorization", "ham_cutoff"]
+            is_spam_guessed = prob >= options["Categorization", "spam_cutoff"]
+            if is_spam:
+                if init_ground:
+                    self.truth_examples[0].append(example) # ground truth spam
+                self.nspam_tested += 1
+                if is_spam_guessed:
+                    self.nspam_right += 1
+                elif is_ham_guessed:
+                    self.nspam_wrong += 1
+                    self.spam_wrong_examples.append(example)
+                else:
+                    self.nspam_unsure += 1
+                    self.unsure_examples.append(example)
+            else:
+                if init_ground:
+                    self.truth_examples[1].append(example) # gound truth ham
+                self.nham_tested += 1
+                if is_ham_guessed:
+                    self.nham_right += 1
+                elif is_spam_guessed:
+                    self.nham_wrong += 1
+                    self.ham_wrong_examples.append(example)
+                else:
+                    self.nham_unsure += 1
+                    self.unsure_examples.append(example)
+        # print '--------NUMBER OF EMAILS TESTED AGAINST---------'
+        print self.nham_tested + self.nspam_tested
+        assert (self.nham_right + self.nham_wrong + self.nham_unsure ==
+                self.nham_tested)
+        assert (self.nspam_right + self.nspam_wrong + self.nspam_unsure ==
+                self.nspam_tested)
+
+    def train_predict(self, stream, is_spam, callback=None, update=False, all_opt=False):
+        guess = self.classifier.spamprob
+        counter = 1
+        for example in stream:
+            old_prob = 0
+
+            if example.prob is not None:
+                old_prob = example.prob
+
+            prob = guess(example, update=update, all_opt=all_opt)
+            example.probdiff = prob - old_prob
+
+            if callback:
+                callback(example, prob)
+
+            if is_spam == 0:
+                self.train_examples[0].append(example)  # Spam Set1
+                example.train = 0
+
+            if is_spam == 1:
+                self.train_examples[1].append(example)  # Ham Set1
+                example.train = 1
+
+            if is_spam == 2:
+                if counter % 100 == 0:
+                    print "Trained on", counter, "Set3 spam..."
+                self.train_examples[2].append(example)  # Spam Set3
+                example.train = 2
+
+            if is_spam == 3:
+                if counter % 100 == 0:
+                    print "Trained on", counter, "Set3 ham..."
+                self.train_examples[3].append(example)  # Ham Set3
+                example.train = 3
+
+            counter += 1
+        assert (self.nham_right + self.nham_wrong + self.nham_unsure ==
+                self.nham_tested)
+        assert (self.nspam_right + self.nspam_wrong + self.nspam_unsure ==
+                self.nspam_tested)
+
+    def false_positive_rate(self):
+        """Percentage of ham mistakenly identified as spam, in 0.0..100.0."""
+        return self.nham_wrong * 1e2 / (self.nham_tested or 1)
+
+    def false_negative_rate(self):
+        """Percentage of spam mistakenly identified as ham, in 0.0..100.0."""
+        return self.nspam_wrong * 1e2 / (self.nspam_tested or 1)
+
+    def unsure_rate(self):
+        return ((self.nham_unsure + self.nspam_unsure) * 1e2 /
+                ((self.nham_tested + self.nspam_tested) or 1))
+
+    def false_positives(self):
+        return self.ham_wrong_examples
+
+    def false_negatives(self):
+        return self.spam_wrong_examples
+
+    def unsures(self):
+        return self.unsure_examples
+
+    # Returns rate of correctly labeled emails
+    def correct_classification_rate(self):
+        return (self.nham_right + self.nspam_right) * 1e2 / ((self.nham_tested + self.nspam_tested) or 1)
+
+    # Returns rate of incorrectly labeled emails
+    def incorrect_classification_rate(self):
+        return (self.nham_wrong + self.nspam_wrong) * 1e2 / ((self.nham_tested + self.nspam_tested) or 1)
+
+
+class _Example:
+    def __init__(self, name, words):
+        self.name = name
+        self.words = words
+
+    def __iter__(self):
+        return iter(self.words)
+
+_easy_test = """
+    >>> from spambayes.classifier import Bayes
+    >>> from spambayes.Options import options
+    >>> options["Categorization", "ham_cutoff"] = options["Categorization", "spam_cutoff"] = 0.5
+
+    >>> good1 = _Example('', ['a', 'b', 'c'])
+    >>> good2 = _Example('', ['a', 'b'])
+    >>> bad1 = _Example('', ['c', 'd'])
+
+    >>> t = Test()
+    >>> t.set_classifier(Bayes())
+    >>> t.train([good1, good2], [bad1])
+    >>> t.predict([_Example('goodham', ['a', 'b']),
+    ...            _Example('badham', ['d'])    # FP
+    ...           ], False)
+    >>> t.predict([_Example('goodspam', ['d']),
+    ...            _Example('badspam1', ['a']), # FN
+    ...            _Example('badspam2', ['a', 'b']),    # FN
+    ...            _Example('badspam3', ['d', 'a', 'b'])    # FN
+    ...           ], True)
+
+    >>> t.nham_tested
+    2
+    >>> t.nham_right, t.nham_wrong
+    (1, 1)
+    >>> t.false_positive_rate()
+    50.0
+    >>> [e.name for e in t.false_positives()]
+    ['badham']
+
+    >>> t.nspam_tested
+    4
+    >>> t.nspam_right, t.nspam_wrong
+    (1, 3)
+    >>> t.false_negative_rate()
+    75.0
+    >>> [e.name for e in t.false_negatives()]
+    ['badspam1', 'badspam2', 'badspam3']
+
+    >>> [e.name for e in t.unsures()]
+    []
+    >>> t.unsure_rate()
+    0.0
+"""
+
+__test__ = {'easy': _easy_test}
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

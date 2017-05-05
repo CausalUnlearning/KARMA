@@ -1,0 +1,47 @@
+---------------------------
+Data Set: Mislabeled-Both-1.1
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+Vanilla Detection Rate: 95.1573174699.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 63.1175349723
+1, 1: 67.0864897523, 962, 742
+2, 1: 73.6022679742, 578, 449
+3, 1: 75.8144722777, 526, 478
+4, 1: 77.2319561277, 465, 302
+5, 1: 81.6842496631, 156, 139
+6, 1: 81.6935446391, 342, 271
+7, 1: 83.6083097086, 104, 104
+8, 1: 88.5207045592, 104, 96
+9, 1: 89.6500441511, 242, 198
+10, 1: 90.4726495329, 342, 193
+11, 1: 90.6446065901, 43, 36
+12, 2: 92.8475159176, 156, 4
+13, 2: 92.9358181903, 43, 23
+14, 3: 93.7119486917, 1350, 284
+
+STATS
+---------------------------
+Initial Detection Rate: 63.1175349723
+Final Detection Rate: 93.7119486917
+Total Unlearned:
+5413
+Polluted Percentage of Unlearned:
+3319/5413 = 0.613153519305
+Unpolluted Percentage of Unlearned:
+2094/5413 = 0.386846480695
+Percentage of Polluted Unlearned:
+3319/3600 = 0.921944444444
+Percentage of Unpolluted Unlearned:
+2094/8400 = 0.249285714286
+Percentage of Noisy Data in Unpolluted Unlearned:
+462/2094 = 0.220630372493
+Time for training:
+0 hours, 1 minutes, and 2.7362549305 seconds.
+Time for unlearning:
+0 hours, 54 minutes, and 14.1281001568 seconds.

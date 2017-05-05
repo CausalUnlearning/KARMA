@@ -1,0 +1,204 @@
+Features used to distinguish T2: he, him, his, she, her, them, we, their, our, hers, they, you
+Size of T1 Ham: 5243
+Size of T1 Spam: 5311
+Size of T2 Ham: 2570
+Size of T2 Spam: 5314
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.5
+Vanilla Training: 15665 ham and 21211 spam.
+Testing: 7813 ham and 10625 spam.
+Pollution Training: 20954 ham and 15921 spam.
+Vanilla Detection Rate: 97.2827855516.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 22.8728444192
+1, 1: 48.6734887247, 24303, 12232
+t2 detection rate: 41.1846778285
+2, 1: 51.0801591814, 1630, 1180
+t2 detection rate: 40.1953323186
+3, 1: 51.3359863559, 1361, 1192
+t2 detection rate: 39.8401826484
+4, 1: 51.7339397385, 1100, 861
+t2 detection rate: 39.1806189751
+5, 1: 52.0750426379, 939, 706
+t2 detection rate: 38.8762049721
+6, 1: 52.5961720675, 1308, 694
+t2 detection rate: 38.698630137
+7, 1: 52.6435474702, 365, 309
+t2 detection rate: 38.8001014713
+8, 1: 52.7761985977, 939, 700
+t2 detection rate: 38.2546930492
+9, 1: 53.1552018192, 1061, 681
+t2 detection rate: 38.2800608828
+10, 1: 53.6668561683, 441, 302
+t2 detection rate: 38.6098427194
+11, 1: 53.9132082623, 280, 220
+t2 detection rate: 38.9776763064
+12, 1: 54.7849156718, 526, 389
+t2 detection rate: 39.3962455606
+13, 1: 55.0596930074, 526, 417
+t2 detection rate: 40.7026889904
+14, 1: 55.2870949403, 939, 743
+t2 detection rate: 42.4784373415
+15, 1: 56.1872275914, 256, 155
+t2 detection rate: 43.0365296804
+16, 1: 56.3483039606, 142, 129
+t2 detection rate: 42.9604261796
+17, 1: 56.9452340345, 204, 162
+t2 detection rate: 43.4550989346
+18, 1: 57.5326890279, 380, 358
+t2 detection rate: 44.6473871131
+19, 1: 57.6274398332, 564, 432
+t2 detection rate: 44.7869101979
+20, 1: 58.6317983703, 526, 422
+t2 detection rate: 46.2455606291
+21, 1: 59.6930073906, 256, 200
+t2 detection rate: 46.8924403856
+22, 1: 59.8446086792, 180, 67
+t2 detection rate: 46.7909690512
+23, 1: 60.0435853705, 157, 133
+t2 detection rate: 47.1968543886
+24, 1: 60.3657381088, 204, 139
+t2 detection rate: 47.4124809741
+25, 1: 60.3752131893, 218, 119
+t2 detection rate: 47.5773718924
+26, 1: 60.422588592, 218, 209
+t2 detection rate: 48.097412481
+27, 1: 61.3700966458, 526, 288
+t2 detection rate: 48.7442922374
+28, 1: 61.6353989009, 156, 48
+t2 detection rate: 48.6935565703
+29, 1: 62.0996778473, 256, 231
+t2 detection rate: 48.8838153222
+30, 2: 64.6010991093, 4364, 3089
+t2 detection rate: 52.7777777778
+31, 2: 66.5529657002, 1874, 1161
+t2 detection rate: 59.1577879249
+32, 2: 66.7519423915, 204, 161
+t2 detection rate: 59.0436326738
+33, 2: 66.7898427137, 118, 46
+t2 detection rate: 59.0563165906
+34, 2: 67.0930452909, 787, 15
+t2 detection rate: 57.6737696601
+35, 2: 67.8889520561, 739, 387
+t2 detection rate: 58.8406900051
+36, 2: 68.2490051165, 256, 199
+t2 detection rate: 59.9188229325
+37, 2: 68.48588213, 256, 115
+t2 detection rate: 60.2359208524
+38, 2: 68.9501610764, 256, 188
+t2 detection rate: 60.7052257737
+39, 2: 69.4049649422, 342, 173
+t2 detection rate: 61.1237950279
+40, 2: 69.5470911503, 104, 62
+t2 detection rate: 61.1618467783
+41, 2: 69.6323668751, 256, 196
+t2 detection rate: 61.9482496195
+42, 2: 69.6892173583, 104, 62
+t2 detection rate: 62.037037037
+43, 2: 70.1250710631, 256, 104
+t2 detection rate: 62.468290208
+44, 2: 70.8830775062, 417, 3
+t2 detection rate: 60.7813292745
+45, 2: 71.0536289558, 57, 56
+t2 detection rate: 60.99695586
+46, 2: 71.2241804055, 256, 93
+t2 detection rate: 60.9715880264
+47, 2: 71.2526056471, 256, 252
+t2 detection rate: 61.8214104515
+48, 2: 71.4515823384, 104, 99
+t2 detection rate: 61.9355657027
+49, 3: 77.1082054197, 3441, 2086
+t2 detection rate: 75.0507356672
+50, 3: 81.7509948835, 1100, 593
+t2 detection rate: 84.0816844242
+51, 3: 83.4470342998, 204, 159
+t2 detection rate: 84.6905124302
+52, 3: 84.2713663066, 256, 176
+t2 detection rate: 85.5276509386
+53, 3: 85.6263028236, 603, 117
+t2 detection rate: 85.6544901065
+54, 4: 86.4980102331, 564, 401
+t2 detection rate: 89.928970066
+55, 4: 86.8770134546, 256, 152
+t2 detection rate: 90.2460679858
+56, 4: 87.3223422399, 256, 118
+t2 detection rate: 90.296803653
+57, 4: 87.3318173204, 526, 27
+t2 detection rate: 90.0304414003
+58, 4: 87.6065946561, 143, 113
+t2 detection rate: 90.3729071537
+59, 4: 87.6634451393, 256, 172
+t2 detection rate: 90.9563673262
+60, 4: 87.9003221527, 180, 26
+t2 detection rate: 90.8802638255
+61, 4: 88.3172256964, 526, 426
+t2 detection rate: 94.6473871131
+62, 4: 88.4404017434, 304, 66
+t2 detection rate: 94.6600710299
+63, 4: 88.5256774683, 104, 54
+t2 detection rate: 94.7361745307
+64, 4: 88.8004548039, 156, 20
+t2 detection rate: 94.6981227803
+65, 4: 89.0089065757, 142, 74
+t2 detection rate: 94.7361745307
+66, 4: 89.08470722, 104, 49
+t2 detection rate: 94.837645865
+67, 4: 89.3026340724, 203, 66
+t2 detection rate: 94.9518011162
+68, 4: 89.3973848778, 104, 67
+t2 detection rate: 95.1293759513
+69, 4: 89.5110858442, 256, 200
+t2 detection rate: 96.6768138001
+70, 4: 89.5679363275, 57, 31
+t2 detection rate: 96.7021816337
+71, 4: 89.823763502, 180, 61
+t2 detection rate: 96.8417047184
+72, 4: 90.0322152738, 43, 24
+t2 detection rate: 96.8543886352
+73, 4: 90.1364411597, 156, 63
+t2 detection rate: 96.8417047184
+74, 5: 90.2406670457, 365, 7
+t2 detection rate: 96.8290208016
+75, 5: 90.2596172067, 304, 120
+t2 detection rate: 97.0826991375
+76, 6: 90.5912450256, 219, 46
+t2 detection rate: 97.1588026383
+77, 6: 90.6291453477, 218, 39
+t2 detection rate: 97.1334348047
+78, 7: 90.685995831, 242, 1
+t2 detection rate: 97.0826991375
+79, 8: 90.704945992, 104, 34
+t2 detection rate: 97.1588026383
+80, 9: 90.9607731666, 104, 55
+t2 detection rate: 97.1588026383
+81, 10: 91.1597498579, 417, 69
+t2 detection rate: 97.2729578894
+82, 11: 91.19765018, 142, 6
+t2 detection rate: 97.2095383054
+83, 11: 91.4155770324, 203, 33
+t2 detection rate: 97.1461187215
+
+STATS
+---------------------------
+Initial Detection Rate: 22.8728444192
+Final Detection Rate: 91.4155770324
+Total Unlearned:
+63405
+Polluted Percentage of Unlearned:
+35930/63405 = 0.56667455248
+Unpolluted Percentage of Unlearned:
+27475/63405 = 0.43332544752
+Percentage of Polluted Unlearned:
+35930/36875 = 0.974372881356
+Percentage of Unpolluted Unlearned:
+27475/36876 = 0.745064540623
+--------Experiment2 Statistics--------Polluted Ham unlearned with features: 10762Polluted Spam unlearned with features: 9974Of all unlearned, polluted emails, what percentage contain any of the partition features: 0.577122182021Polluted Ham NOT unlearned with features: 336Polluted Spam NOT unlearned with features: 249Of all polluted emails NOT unlearned, what percentage contain any of the partition features: 0.619047619048Percentage of Noisy Data in Unpolluted Unlearned:
+7886/27475 = 0.287024567789
+Time for training:
+0 hours, 8 minutes, and 11.8498079777 seconds.
+Time for unlearning:
+12 hours, 26 minutes, and 55.2857310772 seconds.

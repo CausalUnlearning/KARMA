@@ -1,0 +1,6 @@
+Frequency2 Tests
+distance_opt = frequency2
+	e.g. 1/(N2+N3+N8+3)
+all_opt = True
+greedy = True
+include_unsures = False

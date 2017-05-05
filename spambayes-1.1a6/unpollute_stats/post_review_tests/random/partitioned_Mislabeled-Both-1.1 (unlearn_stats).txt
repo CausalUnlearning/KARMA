@@ -1,0 +1,73 @@
+---------------------------
+Data Set: Mislabeled-Both-1.1
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+Vanilla Detection Rate: 95.1573174699.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 62.7440044618
+1, 1: 69.6597880647, 526, 434
+t2 detection rate: 69.6811971373
+2, 1: 73.508087005, 280, 263
+t2 detection rate: 72.9249930291
+3, 1: 76.1665737126, 256, 200
+t2 detection rate: 76.633516126
+4, 1: 78.2952221603, 256, 239
+t2 detection rate: 78.353006785
+5, 1: 80.1543037739, 204, 160
+t2 detection rate: 80.0446138117
+6, 1: 81.9947945715, 143, 110
+t2 detection rate: 81.7455153825
+7, 1: 83.556423127, 157, 133
+t2 detection rate: 83.1768751743
+8, 1: 85.8895705521, 156, 108
+t2 detection rate: 85.4819221117
+9, 1: 86.4379996282, 204, 157
+t2 detection rate: 86.1325401989
+10, 1: 86.5402491169, 104, 64
+t2 detection rate: 86.3834928897
+11, 1: 86.9213608477, 104, 52
+t2 detection rate: 86.5879728599
+12, 1: 87.0700873768, 57, 38
+t2 detection rate: 86.8761037271
+13, 1: 87.358245027, 43, 21
+t2 detection rate: 87.2014127707
+14, 2: 87.5906302287, 256, 198
+t2 detection rate: 87.5731945348
+15, 3: 90.081799591, 81, 42
+t2 detection rate: 89.7852960312
+16, 4: 92.656627626, 1190, 664
+t2 detection rate: 92.5364810856
+17, 4: 93.2608291504, 19, 16
+t2 detection rate: 93.3636955107
+18, 4: 94.0602342443, 104, 61
+t2 detection rate: 93.9399572451
+19, 4: 94.0881204685, 104, 58
+t2 detection rate: 94.0793754066
+20, 5: 94.2461424057, 109, 22
+t2 detection rate: 94.1723208477
+
+STATS
+---------------------------
+Initial Detection Rate: 62.7440044618
+Final Detection Rate: 94.2461424057
+Total Unlearned:
+4353
+Polluted Percentage of Unlearned:
+3040/4353 = 0.69836894096
+Unpolluted Percentage of Unlearned:
+1313/4353 = 0.30163105904
+Percentage of Polluted Unlearned:
+3040/3600 = 0.844444444444
+Percentage of Unpolluted Unlearned:
+1313/8400 = 0.15630952381
+Percentage of Noisy Data in Unpolluted Unlearned:
+346/1313 = 0.263518659558
+Time for training:
+0 hours, 0 minutes, and 56.2360649109 seconds.
+Time for unlearning:
+1 hours, 11 minutes, and 28.3018090725 seconds.

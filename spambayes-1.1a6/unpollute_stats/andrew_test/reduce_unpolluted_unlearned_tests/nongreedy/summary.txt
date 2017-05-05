@@ -1,0 +1,1 @@
+All tests run with greedy=false, intersection, skip_rejects=true, all_opt=true

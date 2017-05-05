@@ -1,0 +1,6 @@
+Frequency4 Tests
+distance_opt = frequency4
+	e.g. (1/(N2+N3+N8+3)) / |N|
+all_opt = True
+greedy = True
+include_unsures = False

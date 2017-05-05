@@ -1,0 +1,61 @@
+greedy=false
+all_opt=true
+update_opt=hybrid
+distance_opt=intersection
+
+---------------------------
+Data Set: Mislabeled-Both-1.1
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+Vanilla Detection Rate: 93.033415439.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 49.295905563
+1, 1: 49.9372589116, 95, 8
+2, 1: 50.2207556816, 142, 97
+3, 1: 51.4337500581, 342, 218
+4, 1: 55.4305897662, 939, 457
+5, 1: 86.8383138913, 2948, 1741
+6, 2: 87.3030626946, 180, 82
+7, 2: 87.8235813543, 417, 302
+8, 2: 89.0133382907, 379, 302
+9, 2: 89.7801738161, 365, 28
+10, 2: 91.2766649626, 156, 9
+11, 3: 92.0853278803, 403, 292
+12, 4: 92.1271552726, 13, 0
+13, 4: 92.3223497699, 19, 2
+14, 4: 92.4478319468, 142, 0
+15, 4: 92.9079332621, 313, 0
+16, 4: 93.2100199842, 118, 2
+17, 5: 93.2471998885, 19, 0
+18, 5: 93.2518473765, 180, 0
+19, 5: 93.2704373286, 57, 0
+20, 5: 93.2750848167, 81, 0
+21, 5: 93.326207185, 43, 0
+22, 5: 93.3447971371, 88, 0
+23, 5: 93.4238044337, 57, 0
+
+STATS
+---------------------------
+Initial Detection Rate: 49.295905563
+Final Detection Rate: 93.4238044337
+Total Unlearned:
+7496
+Polluted Percentage of Unlearned:
+3540/7496 = 0.472251867663
+Unpolluted Percentage of Unlearned:
+3956/7496 = 0.527748132337
+Percentage of Polluted Unlearned:
+3540/3600 = 0.983333333333
+Percentage of Unpolluted Unlearned:
+3956/8400 = 0.470952380952
+Percentage of Noisy Data in Unpolluted Unlearned:
+808/3956 = 0.204246713852
+Time for training:
+0 hours, 1 minutes, and 46.3709170818 seconds.
+Time for unlearning:
+1 hours, 50 minutes, and 27.655739069 seconds.

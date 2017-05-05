@@ -1,0 +1,68 @@
+---------------------------
+Data Set: DictionarySets-1.1
+Vanilla Training: 10533 ham and 10984 spam.
+Testing: 6000 ham and 6000 spam.
+Pollution Training: 0 ham and 26000 spam.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 68.8
+1, 1: 68.8083333333, 156, 0, False
+2, 1: 68.8833333333, 403, 0, False
+3, 1: 68.9833333333, 142, 129, False
+4, 1: 69.2083333333, 939, 936, False
+5, 1: 69.5, 603, 280, False
+6, 1: 70.0333333333, 990, 573, True
+7, 1: 71.7833333333, 2412, 2118, True
+8, 1: 86.3916666667, 22330, 21908, True
+9, 2: 86.4166666667, 57, 0, False
+10, 2: 86.4416666667, 57, 0, False
+11, 2: 86.575, 104, 0, False
+12, 2: 86.5916666667, 81, 0, False
+13, 2: 86.6416666667, 57, 0, False
+14, 2: 86.6583333333, 342, 0, False
+15, 2: 86.6666666667, 142, 0, False
+16, 2: 86.675, 81, 0, False
+17, 2: 86.7, 118, 0, False
+18, 2: 86.7416666667, 118, 0, False
+19, 2: 86.85, 465, 0, False
+20, 2: 86.8916666667, 564, 0, False
+21, 2: 87.4, 2786, 0, True
+22, 3: 87.4833333333, 81, 0, False
+23, 3: 87.5666666667, 81, 0, False
+24, 3: 87.5916666667, 256, 0, False
+25, 3: 87.6583333333, 204, 0, False
+26, 4: 87.6833333333, 43, 0, False
+27, 4: 87.6916666667, 104, 0, False
+28, 4: 87.7083333333, 142, 0, False
+29, 4: 87.7583333333, 104, 0, False
+30, 4: 87.7833333333, 57, 0, False
+31, 4: 87.7916666667, 57, 0, False
+32, 4: 88.4416666667, 204, 0, False
+33, 5: 88.4583333333, 31, 28, None
+34, 5: 88.5166666667, 81, 0, False
+35, 6: 88.525, 37, 0, None
+36, 6: 88.5916666667, 57, 0, False
+37, 7: 88.6083333333, 57, 0, False
+38, 8: 88.625, 104, 0, False
+
+STATS
+---------------------------
+Initial Detection Rate: 68.8
+Final Detection Rate: 88.625
+Total Unlearned:
+34647
+Polluted Percentage of Unlearned:
+0.749617571507
+Unpolluted Percentage of Unlearned:
+0.250382428493
+Percentage of Polluted Unlearned:
+0.998923076923
+Percentage of Unpolluted Unlearned:
+0.403169586838
+Time for training:
+0 hours, 3 minutes, and 9.91799998283 seconds.
+Time for unlearning:
+4 hours, 10 minutes, and 31.0510001183 seconds.

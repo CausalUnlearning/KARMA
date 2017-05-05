@@ -1,0 +1,83 @@
+---------------------------
+Data Set: Mislabeled-Both-2.2
+Vanilla Training: 3600 ham and 3600 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 2400 ham and 2400 spam.
+Vanilla Detection Rate: 94.4741367291.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 35.3039598438
+1, 1: 49.4887525562, 1630, 1165
+t2 detection rate: 49.8652291105
+2, 1: 52.9559397658, 1593, 1040
+t2 detection rate: 53.2856213403
+3, 1: 53.5787321063, 526, 434
+t2 detection rate: 53.7782321777
+4, 1: 56.8507157464, 417, 315
+t2 detection rate: 56.6595408495
+5, 1: 59.6579289831, 256, 196
+t2 detection rate: 59.4943768008
+6, 1: 66.6108942183, 256, 204
+t2 detection rate: 66.6790593921
+7, 1: 68.1260457334, 104, 68
+t2 detection rate: 68.2684264337
+8, 1: 69.9944227552, 104, 78
+t2 detection rate: 70.1552188865
+9, 1: 71.4816880461, 57, 47
+t2 detection rate: 71.6051677665
+10, 1: 73.8984941439, 104, 68
+t2 detection rate: 73.7707965424
+11, 1: 75.6274400446, 104, 62
+t2 detection rate: 75.3043963194
+12, 2: 82.0319762038, 1435, 414
+t2 detection rate: 81.9871735291
+13, 2: 88.0832868563, 365, 78
+t2 detection rate: 87.9635653871
+14, 2: 88.3342628741, 19, 9
+t2 detection rate: 88.1866344456
+15, 2: 88.5387618516, 23, 12
+t2 detection rate: 88.4840598569
+16, 3: 89.133667968, 466, 55
+t2 detection rate: 89.1067943117
+17, 3: 89.1894404164, 81, 29
+t2 detection rate: 89.1997397528
+18, 4: 90.890500093, 81, 9
+t2 detection rate: 91.1887721907
+19, 4: 90.9834541736, 81, 28
+t2 detection rate: 90.8355795148
+20, 4: 91.3738613125, 104, 50
+t2 detection rate: 91.4676085138
+21, 5: 91.6062465142, 142, 35
+t2 detection rate: 91.9137466307
+22, 5: 91.9222903885, 68, 9
+t2 detection rate: 92.0438702482
+23, 6: 92.1825618145, 57, 35
+t2 detection rate: 92.3227065712
+24, 6: 92.3219929355, 19, 8
+t2 detection rate: 92.480713821
+25, 7: 92.4986056888, 81, 31
+t2 detection rate: 92.7223719677
+
+STATS
+---------------------------
+Initial Detection Rate: 35.3039598438
+Final Detection Rate: 92.4986056888
+Total Unlearned:
+8173
+Polluted Percentage of Unlearned:
+4479/8173 = 0.548023981402
+Unpolluted Percentage of Unlearned:
+3694/8173 = 0.451976018598
+Percentage of Polluted Unlearned:
+4479/4800 = 0.933125
+Percentage of Unpolluted Unlearned:
+3694/7200 = 0.513055555556
+Percentage of Noisy Data in Unpolluted Unlearned:
+603/3694 = 0.163237682729
+Time for training:
+0 hours, 0 minutes, and 50.4225320816 seconds.
+Time for unlearning:
+0 hours, 47 minutes, and 19.4073991776 seconds.

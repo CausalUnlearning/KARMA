@@ -1,0 +1,77 @@
+Features used to distinguish T2: he, him, his, she, her, them, we
+Size of T1 Ham: 4775
+Size of T1 Spam: 5032
+Size of T2 Ham: 5758
+Size of T2 Spam: 5952
+---------------------------
+Data Set: Mislabeled-Both-3.1
+Vanilla Training: 3000 ham and 3000 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 3000 ham and 3000 spam.
+Vanilla Detection Rate: 94.7251010829.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 16.8247170388
+1, 1: 56.3780972775, 5643, 2888
+t2 detection rate: 50.0683176772
+2, 1: 56.3882940757, 2725, 1435
+t2 detection rate: 50.0170794193
+3, 1: 57.1938411339, 526, 384
+t2 detection rate: 49.8377455167
+4, 1: 57.3060059141, 256, 146
+t2 detection rate: 49.9146029035
+5, 1: 57.6730906495, 187, 115
+t2 detection rate: 49.8804440649
+6, 1: 57.7648618334, 57, 41
+t2 detection rate: 49.829205807
+7, 1: 57.8158458244, 180, 87
+t2 detection rate: 49.8975234842
+8, 2: 58.488834506, 256, 138
+t2 detection rate: 49.9316823228
+9, 3: 58.6825736719, 104, 55
+t2 detection rate: 49.854824936
+Top 20 most common features in unlearned emails as (word, frequency)
+('title', 209)
+('breaking', 148)
+('spend', 136)
+('sheet', 135)
+('talked', 134)
+('decide', 129)
+('assurance', 129)
+('invitation', 126)
+('committed', 122)
+('indicate', 118)
+('logistics', 118)
+('registration', 118)
+('ail', 109)
+('additionally', 108)
+('delays', 108)
+('students', 107)
+('asap', 107)
+('expensive', 106)
+('ballot', 105)
+('flash', 104)
+
+STATS
+---------------------------
+Initial Detection Rate: 16.8247170388
+Final Detection Rate: 58.6825736719
+Total Unlearned:
+9934
+Polluted Percentage of Unlearned:
+5289/9934 = 0.532413931951
+Unpolluted Percentage of Unlearned:
+4645/9934 = 0.467586068049
+Percentage of Polluted Unlearned:
+5289/6000 = 0.8815
+Percentage of Unpolluted Unlearned:
+4645/6000 = 0.774166666667
+Percentage of Noisy Data in Unpolluted Unlearned:
+300/4645 = 0.0645855758881
+Time for training:
+0 hours, 0 minutes, and 47.8803188801 seconds.
+Time for unlearning:
+0 hours, 13 minutes, and 18.8116698265 seconds.

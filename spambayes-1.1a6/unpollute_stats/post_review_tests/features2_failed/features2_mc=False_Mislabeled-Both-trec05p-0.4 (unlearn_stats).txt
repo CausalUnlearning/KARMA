@@ -1,0 +1,81 @@
+Features used to distinguish T2: he,, him,, his,, she,, her,, them,, we,, their,, our,, hers,, they
+Size of T1 Ham: 1156
+Size of T1 Spam: 1057
+Size of T2 Ham: 6757
+Size of T2 Spam: 9468
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.4
+Vanilla Training: 18844 ham and 25407 spam.
+Testing: 7913 ham and 10525 spam.
+Pollution Training: 16858 ham and 12642 spam.
+Vanilla Detection Rate: 97.5973532921.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 43.2444645278
+1, 1: 53.7731586082, 7400, 6465
+t2 detection rate: 56.6348228043
+2, 1: 57.6140985088, 526, 423
+t2 detection rate: 56.9183359014
+3, 1: 74.3786714867, 939, 778
+t2 detection rate: 59.6979969183
+4, 1: 75.372797108, 526, 416
+t2 detection rate: 60.2033898305
+5, 1: 76.0957975599, 104, 67
+t2 detection rate: 60.1725731895
+6, 1: 77.1802982377, 256, 198
+t2 detection rate: 61.0292758089
+7, 1: 78.0388612743, 256, 200
+t2 detection rate: 61.7380585516
+8, 1: 78.6262991414, 526, 423
+t2 detection rate: 62.249614792
+9, 1: 78.8522367826, 57, 39
+t2 detection rate: 62.6995377504
+10, 1: 79.7107998192, 104, 73
+t2 detection rate: 62.7981510015
+11, 1: 79.8915499322, 43, 15
+t2 detection rate: 62.7734976888
+12, 1: 80.0723000452, 104, 70
+t2 detection rate: 62.9892141757
+13, 1: 80.3434252146, 104, 62
+t2 detection rate: 63.1063174114
+14, 2: 80.3886127429, 2725, 2527
+t2 detection rate: 65.1217257319
+15, 2: 80.6597379123, 379, 255
+t2 detection rate: 66.0277349769
+16, 2: 80.7049254406, 787, 625
+t2 detection rate: 66.8967642527
+17, 2: 80.9308630818, 180, 38
+t2 detection rate: 67.5377503852
+18, 2: 81.3827383642, 241, 50
+t2 detection rate: 67.1679506934
+19, 2: 81.8798011749, 241, 108
+t2 detection rate: 68.3513097072
+20, 2: 81.9701762314, 526, 421
+t2 detection rate: 68.5362095532
+21, 2: 82.1057388161, 403, 107
+t2 detection rate: 69.405238829
+22, 2: 82.2864889291, 203, 84
+t2 detection rate: 69.81201849
+23, 2: 82.3316764573, 218, 30
+t2 detection rate: 69.2942989214
+24, 2: 82.6028016268, 104, 36
+t2 detection rate: 69.2080123267
+
+STATS
+---------------------------
+Initial Detection Rate: 43.2444645278
+Final Detection Rate: 82.6028016268
+Total Unlearned:
+16952
+Polluted Percentage of Unlearned:
+13510/16952 = 0.796956111373
+Unpolluted Percentage of Unlearned:
+3442/16952 = 0.203043888627
+Percentage of Polluted Unlearned:
+13510/29500 = 0.457966101695
+Percentage of Unpolluted Unlearned:
+3442/44251 = 0.0777835529141
+--------Experiment2 Statistics--------

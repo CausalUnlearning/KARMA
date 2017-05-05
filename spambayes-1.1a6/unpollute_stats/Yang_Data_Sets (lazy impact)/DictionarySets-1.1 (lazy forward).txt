@@ -1,0 +1,64 @@
+---------------------------
+Data Set: DictionarySets-1.1
+Vanilla Training: 10533 ham and 10984 spam.
+Testing: 6000 ham and 6000 spam.
+Pollution Training: 0 ham and 26000 spam.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 68.8
+1, 1: 86.4583333333, 5743, 0, True
+2, 1: 88.6833333333, 18243, 17995, True
+3, 1: 88.7083333333, 100, 64, None
+4, 1: 88.7416666667, 100, 58, None
+5, 1: 88.75, 100, 38, None
+6, 1: 88.875, 100, 57, None
+7, 1: 88.9083333333, 100, 0, None
+8, 1: 88.975, 100, 0, None
+9, 1: 89.1083333333, 100, 0, None
+10, 1: 89.125, 100, 0, None
+11, 1: 89.1416666667, 100, 0, None
+12, 1: 89.1666666667, 100, 39, None
+13, 1: 89.2666666667, 100, 0, None
+14, 1: 89.2916666667, 100, 17, None
+15, 1: 89.4583333333, 100, 28, None
+16, 1: 89.4833333333, 100, 0, None
+17, 1: 89.6333333333, 100, 0, None
+18, 2: 89.8416666667, 88, 0, False
+19, 2: 89.925, 578, 465, False
+20, 2: 89.9416666667, 156, 0, False
+21, 2: 90.1083333333, 43, 0, False
+22, 2: 90.1166666667, 63, 37, None
+23, 2: 90.1583333333, 100, 53, None
+24, 2: 90.2583333333, 100, 0, None
+25, 2: 90.275, 100, 0, None
+26, 2: 90.3, 100, 42, None
+27, 2: 90.325, 100, 0, None
+28, 2: 90.3333333333, 100, 0, None
+29, 2: 90.375, 100, 0, None
+30, 2: 90.3916666667, 100, 90, None
+31, 2: 90.4166666667, 100, 0, None
+32, 2: 90.4833333333, 100, 31, None
+33, 2: 90.5083333333, 100, 0, None
+34, 2: 90.5416666667, 100, 29, None
+
+STATS
+---------------------------
+Initial Detection Rate: 68.8
+Final Detection Rate: 90.5416666667
+Total Unlearned:
+27614
+Polluted Percentage of Unlearned:
+0.689613963931
+Unpolluted Percentage of Unlearned:
+0.310386036069
+Percentage of Polluted Unlearned:
+0.732423076923
+Percentage of Unpolluted Unlearned:
+0.398336199284
+Time for training:
+0 hours, 6 minutes, and 55.3580000401 seconds.
+Time for unlearning:
+1 hours, 50 minutes, and 3.06399989128 seconds.

@@ -1,0 +1,62 @@
+Ham cutoff : 0.49
+Spam cutoff : 0.51
+Size of T1 Ham: 23
+Size of T1 Spam: 1060
+Size of T2 Ham: 4975
+Size of T2 Spam: 9026
+---------------------------
+Data Set: Mislabeled-Both-trec07p-0.3
+Vanilla Training: 14132 ham and 28103 spam.
+Testing: 4998 ham and 10086 spam.
+Pollution Training: 12010 ham and 6090 spam.
+Vanilla Detection Rate: 96.9305224078.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 0.0
+1, 1: 97.2299168975, 25791, 11759
+t2 detection rate: 62.9955003214
+Top 20 most common features in unlearned emails as (word, frequency)
+('url:org', 11393)
+('sender:no real name:2**0', 9255)
+('header:Errors-To:1', 9099)
+('skip:s 10', 8450)
+('please', 7429)
+('subject:: ', 7049)
+('list', 6729)
+('header:In-Reply-To:1', 6645)
+('subject:] ', 6038)
+('mailing', 5944)
+('url:html', 5843)
+('url:listinfo', 5692)
+('skip:_ 40', 5628)
+('read', 5610)
+('url:mailman', 5552)
+('wrote:', 5512)
+('use', 5395)
+('2007', 5342)
+('reply-to:no real name:2**0', 5145)
+('provide', 4892)
+
+STATS
+---------------------------
+Initial Detection Rate: 0.0
+Final Detection Rate: 97.2299168975
+Total Unlearned:
+25791
+Polluted Percentage of Unlearned:
+11759/25791 = 0.455934240627
+Unpolluted Percentage of Unlearned:
+14032/25791 = 0.544065759373
+Percentage of Polluted Unlearned:
+11759/18100 = 0.649668508287
+Percentage of Unpolluted Unlearned:
+14032/42235 = 0.33223629691
+Percentage of Noisy Data in Unpolluted Unlearned:
+0/14032 = 0.0
+Time for training:
+0 hours, 20 minutes, and 24.2691719532 seconds.
+Time for unlearning:
+6 hours, 7 minutes, and 33.1385538578 seconds.

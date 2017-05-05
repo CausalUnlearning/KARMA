@@ -1,0 +1,65 @@
+greedy=true
+all_opt=true
+update_opt=hybrid
+distance_opt=intersection
+skip_rejects=True
+modification: Greedy method now skips over all negative-delta clusters
+---------------------------
+Data Set: Mislabeled-Both-1.1
+Vanilla Training: 4200 ham and 4200 spam.
+Testing: 10533 ham and 10984 spam.
+Pollution Training: 1800 ham and 1800 spam.
+Vanilla Detection Rate: 93.033415439.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 49.295905563
+1, 1: 74.8849746712, 1508, 1188
+2, 1: 77.4039131849, 181, 152
+3, 1: 81.0707812427, 280, 201
+4, 1: 82.6369847098, 119, 11
+5, 1: 83.664079565, 104, 50
+6, 1: 84.0033461914, 142, 36
+7, 1: 84.2171306409, 57, 22
+8, 1: 84.3472603058, 22, 3
+9, 2: 86.7778965469, 1645, 1230
+10, 2: 87.1961704699, 365, 90
+11, 2: 88.2557977413, 19, 19
+12, 2: 89.208532788, 256, 217
+13, 3: 92.1225077845, 104, 9
+14, 3: 92.3781196263, 104, 8
+15, 4: 92.7406236929, 118, 48
+16, 4: 92.8661058698, 104, 51
+17, 5: 93.6515313473, 540, 2
+18, 5: 93.6840637635, 43, 0
+19, 6: 93.9350281173, 157, 110
+20, 6: 93.9582655575, 118, 7
+21, 6: 93.9675605335, 180, 3
+22, 6: 94.0140354139, 118, 58
+23, 7: 94.0558628062, 156, 35
+24, 8: 94.1488125668, 119, 0
+25, 9: 94.1581075429, 43, 0
+26, 9: 94.1859924711, 84, 3
+
+STATS
+---------------------------
+Initial Detection Rate: 49.295905563
+Final Detection Rate: 94.1859924711
+Total Unlearned:
+6686
+Polluted Percentage of Unlearned:
+3553/6686 = 0.531408914149
+Unpolluted Percentage of Unlearned:
+3133/6686 = 0.468591085851
+Percentage of Polluted Unlearned:
+3553/3600 = 0.986944444444
+Percentage of Unpolluted Unlearned:
+3133/8400 = 0.372976190476
+Percentage of Noisy Data in Unpolluted Unlearned:
+205/3133 = 0.0654324928184
+Time for training:
+0 hours, 2 minutes, and 28.7422931194 seconds.
+Time for unlearning:
+2 hours, 10 minutes, and 30.319466114 seconds.

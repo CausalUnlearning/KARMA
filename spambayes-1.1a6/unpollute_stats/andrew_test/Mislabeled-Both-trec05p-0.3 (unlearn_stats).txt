@@ -1,0 +1,19 @@
+---------------------------
+Data Set: Mislabeled-Both-trec05p-0.3
+Vanilla Training: 22129 ham and 29497 spam.
+Testing: 7885 ham and 10553 spam.
+Pollution Training: 12740 ham and 9385 spam.
+---------------------------
+
+
+CLUSTER AND RATE COUNTS:
+---------------------------
+0: 75.2521965506
+
+STATS
+---------------------------
+Initial Detection Rate: 75.2521965506
+Final Detection Rate: 75.2521965506
+Total Unlearned:
+0
+Polluted Percentage of Unlearned:
